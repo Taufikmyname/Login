@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +31,8 @@ public class CuacaMainActivity extends AppCompatActivity {
     private TextView _textViewCityInfo;
     private SwipeRefreshLayout _swipeRefreshLayout2;
 
+    private Button _buttonViewCityInfo;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +41,33 @@ public class CuacaMainActivity extends AppCompatActivity {
 
         _recyclerView2 = findViewById(R.id.recyclerView2);
         _totaltextView = findViewById(R.id.totalTextView);
-        _textViewCityInfo = findViewById(R.id.textView_cityInfo);
-
         initSwipeRefreshLayout();
         initRecyclerView2();
+        initButtonViewCityInfo();
     }
 
+    private void initButtonViewCityInfo() {
+        _buttonViewCityInfo = findViewById(R.id.buttonView_cityInfo);
+
+        _buttonViewCityInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CuacaCityModel cm = rm.getCityModel();
+                CuacaCoordModel com = cm.getCoordModel();
+                double latitude = com.getLat();
+                double longitude = com.getLon();
+
+                Bundle param = new Bundle();
+                param.putDouble("lat", latitude);
+                param.putDouble("lon", longitude);
+
+
+                Intent intent = new Intent(CuacaMainActivity.this, CuacaGpsActivity.class);
+                intent.putExtra("param", param);
+                startActivity(intent);
+            }
+        });
+    }
 
 
     private void initSwipeRefreshLayout() {
@@ -97,7 +123,7 @@ public class CuacaMainActivity extends AppCompatActivity {
                 "Matahari Terbit: " + sunriseTime + " (Lokal)\n" +
                 "Matahari Terbenam: " + sunsetTime + " (Lokal)";
 
-        _textViewCityInfo.setText(cityInfo);
+        _buttonViewCityInfo.setText(cityInfo);
     }
 
 

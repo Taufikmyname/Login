@@ -1,8 +1,12 @@
 package com.taufik.login;
 
+import com.google.gson.annotations.SerializedName;
+
 public class CuacaCityModel {
     private long sunrise, sunset;
     private String name;
+    @SerializedName("coord")
+    private CuacaCoordModel coordModel;
 
     public CuacaCityModel() {
     }
@@ -29,5 +33,13 @@ public class CuacaCityModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public CuacaCoordModel getCoordModel() {
+        return coordModel;
+    }
+
+    public void setCoordModel(CuacaCoordModel coordModel) {
+        this.coordModel = coordModel;
     }
 }

@@ -17,102 +17,121 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Mahasiswa Baru"
+            android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NIM"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/nimEditText"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/namaEditText"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/jenisKelaminSpinner"
+            android:textColor="@color/white"
             android:entries="@array/jenisKelaminArray"
             style="@style/spinner1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tempat Lahir"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tempatLahirEditText"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tanggal Lahir (yyyy-mm-dd)"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tanggalLahirEditText"
             android:inputType="date"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alamat"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/alamatEditText"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jurusan / Prodi"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/jpSpinner"
             android:entries="@array/jpArray"
+            android:textColor="@color/white"
             style="@style/spinner1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status Pernikahan"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/statusNikahSpinner"
             android:entries="@array/statusNikahArray"
+            android:textColor="@color/white"
             style="@style/spinner1"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tahun Masuk"
+            android:textColor="@color/white"
             style="@style/textView1"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tahunMasukEditText"
             android:inputType="number"
+            android:textColor="@color/white"
             style="@style/editText1"/>
         <Button
             android:layout_width="match_parent"

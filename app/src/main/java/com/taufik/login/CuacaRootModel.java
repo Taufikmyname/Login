@@ -11,6 +11,8 @@ public class CuacaRootModel {
     private CuacaCityModel cityModel;
 
 
+
+
     public CuacaRootModel() {
     }
 

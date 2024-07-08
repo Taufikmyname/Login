@@ -11,16 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0249A0"
-            android:id="@+id/textView_cityInfo"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:padding="16dp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:id="@+id/buttonView_cityInfo"
+            android:background="@drawable/button_bg">
+        </Button>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="0dp"
