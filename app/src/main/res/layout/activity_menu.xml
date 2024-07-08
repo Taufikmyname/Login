@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:background="@drawable/gradient_a"
+    tools:context=".MenuActivity">
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/img_teenagers_128"
+        android:textColor="#fff"
+        android:text="Master Pemakai"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/student"
+        android:textColor="#fff"
+        android:text="Master Mahasiswa"
+        android:id="@+id/tampilMahasiswaButton"/>
+</GridLayout>
