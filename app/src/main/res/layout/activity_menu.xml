@@ -12,16 +12,26 @@
         android:layout_width="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/img_teenagers_128"
+        android:drawableRight="@drawable/img_dollar_128"
         android:textColor="#fff"
-        android:text="Master Pemakai"/>
+        android:text="Forex"
+        android:id="@+id/tampilForexButton"/>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/student"
+        android:drawableLeft="@drawable/student"
         android:textColor="#fff"
         android:text="Master Mahasiswa"
         android:id="@+id/tampilMahasiswaButton"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/img_weather_lightning_128"
+        android:textColor="#fff"
+        android:text="Cuaca"
+        android:id="@+id/tampilCuacaButton"/>
 </GridLayout>

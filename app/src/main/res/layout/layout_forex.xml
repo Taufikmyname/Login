@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            app:cardCornerRadius="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kodeTextView"
+                    android:text="kode"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:textColor="#cccccc"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#cccccc"
+                    android:text=":"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kursTextView"
+                    android:layout_gravity="end"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:textColor="#cccccc"
+                    android:text="123457890"/>
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
